@@ -1,0 +1,8 @@
+<p>product-view works!</p>
+
+<div *ngIf="  product | async as prod" >
+    <h2>{{ prod.title }}</h2>
+    <p>Price: ${{ prod.price }}</p>
+
+    <!-- Add more details as needed -->
+  </div>

@@ -1,0 +1,10 @@
+<p>product-cart works!</p>
+
+
+<ul *ngFor="let x of productscart">
+
+    <li>{{x.title}}</li>
+    <li>{{x.price}}</li>
+    <a [routerLink]="['/view-product/', x.id]">View Details</a>
+    <button (click)="remove(x.id)">remove</button>
+</ul>

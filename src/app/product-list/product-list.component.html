@@ -1,0 +1,9 @@
+<p>product-list works!</p>
+
+<div *ngFor="let product of products">
+    <h3>{{ product.title }}</h3>
+    <p>Price: ${{ product.price }}</p>
+    <button (click)="addtocart(product)" >Add to Cart</button>
+    <a [routerLink]="['view-product/', product.id]">View Details</a>
+
+  </div>
